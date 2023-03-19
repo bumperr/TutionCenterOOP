@@ -37,10 +37,10 @@ public class testFile {
      }
   }
   
-  public void writeToFile() throws IOException{
+  public void writeToFile(String x) throws IOException{
       try{
         FileWriter file1=new FileWriter("data.txt");
-        file1.write("10.0,20");
+        file1.write(x);
         file1.close();
       }
       catch(IOException e){
